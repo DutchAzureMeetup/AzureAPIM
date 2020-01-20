@@ -23,7 +23,7 @@ you will need this URL for the import process.
 <br/>![Step 1](/images/4.png)
 5. Go to the crate APIM resource
 <br/>![Step 1](/images/5.png)
-6. Click on APIs and the OpenAPI
+6. Click on APIs and then OpenAPI
 <br/>![Step 1](/images/6.png)
 7. As OpenAPI specification url use: https://petstoreapim.azurewebsites.net/api/v3/openapi.json  
    - set **petstore** as API URL suffix
