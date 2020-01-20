@@ -17,9 +17,10 @@ you will need this URL for the import process.
 <br/>![](/images/1.png)
 2. Search for API Management 
 <br/>![](/images/2.png)
-3. Create a new APIM and give it an **unique** name
+3. Create a new APIM and give it an **unique** name.
+- **It's important to choose **Consumption** plan, with the other ones can take 45 min to be created!**
 <br/>![](/images/3.png)
-4. In the Azure Notification Pane you can see the progress (it will take 5 minutes)
+1. In the Azure Notification Pane you can see the progress (it will take 5 minutes)
 <br/>![](/images/4.png)
 5. Go to the created APIM resource
 <br/>![Step 1](/images/5.png)
