@@ -21,7 +21,7 @@ you will need this URL for the import process.
 <br/>![](/images/3.png)
 4. In the Azure Notification Pane you can see the progress (it will take 5 minutes)
 <br/>![](/images/4.png)
-5. Go to the crate APIM resource
+5. Go to the created APIM resource
 <br/>![Step 1](/images/5.png)
 6. Click on APIs and then OpenAPI
 <br/>![](/images/6.png)
