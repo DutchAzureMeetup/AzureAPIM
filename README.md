@@ -14,27 +14,27 @@ https://petstoreapim.azurewebsites.net/api/v3/openapi.json
 you will need this URL for the import process.
 
 1. Go to the Azure Portal and create a new resource
-![Step 1](/images/1.png)
-2. Search for API Management
-![Step 1](/images/2.png)
+<br/>![Step 1](/images/1.png)
+2. Search for API Management 
+<br/>![Step 1](/images/2.png)
 3. Create a new APIM and give it an **unique** name
-![Step 1](/images/3.png)
+<br/>![Step 1](/images/3.png)
 4. In the Azure Notification Pane you can see the progress (it will take 5 minutes)
-![Step 1](/images/4.png)
+<br/>![Step 1](/images/4.png)
 5. Go to the crate APIM resource
-![Step 1](/images/5.png)
+<br/>![Step 1](/images/5.png)
 6. Click on APIs and the OpenAPI
-![Step 1](/images/6.png)
+<br/>![Step 1](/images/6.png)
 7. As OpenAPI specification url use: https://petstoreapim.azurewebsites.net/api/v3/openapi.json  
    - set **petstore** as API URL suffix
-![Step 1](/images/7.png)
-1. The APIs has been imported:
-![Step 1](/images/8.png)
+<br/>![Step 1](/images/7.png)
+8. The APIs has been imported:
+<br/>![Step 1](/images/8.png)
 9. Click on settings and:
 - As Webservice ULR use: https://petstoreapim.azurewebsites.net/api/v3
 - Uncheck Subscription Required
 - Click on Save 
-![Step 1](/images/9.png)
+<br/>![Step 1](/images/9.png)
 10. Go to the following url:
 ``` 
 https://<<youruniqueapimname>>.azure-api.net/petstore/pet/1
@@ -43,6 +43,6 @@ where ``<<youruniqueapimname>>`` must be replace with your unique APIM name you 
 <br/>
 
 Now you should see the response of the PetStore API exposed through Azure API Management
- ![Step 1](/images/10.png)
+ <br/>![Step 1](/images/10.png)
 
 ## Lab 2
