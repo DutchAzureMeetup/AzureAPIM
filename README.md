@@ -59,24 +59,24 @@ In this lab we go to apply a rate limit policy.
 
 3. Replace the whole content with the following and then Save:
 
-``` xml
-<policies>
-    <inbound>
-        <base />
-        <rate-limit calls="5" renewal-period="15" />
-    </inbound>
-    <backend>
-        <base />
-    </backend>
-    <outbound>
-        <base />
-    </outbound>
-    <on-error>
-        <base />
-    </on-error>
-</policies>
-``` 
- <br/>![](/images/23.png)
+    ``` xml
+    <policies>
+        <inbound>
+            <base />
+            <rate-limit calls="5" renewal-period="15" />
+        </inbound>
+        <backend>
+            <base />
+        </backend>
+        <outbound>
+            <base />
+        </outbound>
+        <on-error>
+            <base />
+        </on-error>
+    </policies>
+    ``` 
+    <br/>![](/images/23.png)
 
 4. Open a browser and request the API from the previous lab:
 
@@ -86,4 +86,44 @@ https://<<youruniqueapimname>>.azure-api.net/petstore/pet/1
 
 Refresh the page multiple times, you will see a message like this: 
 
- <br/>![](/images/24.png)
+<br/>![](/images/24.png)
+
+
+ ## Lab 3
+
+ Another best practice when dealing with APIs is to identify your consumers (this is different from authentication!).
+ In APIM this can be accomplished using subscriptions keys linked to a Product.
+
+1. Go to your PetStore API and in the settings pane enable the checkbox "Subscription Required" and Save.
+ <br/>![](/images/31.png)
+
+2. Open a browser and request the API from the previous lab:
+
+    ``` 
+    https://<<youruniqueapimname>>.azure-api.net/petstore/pet/1
+    ```
+    You will see the following: 
+    <br/>![](/images/32.png)
+
+3. Let's create a new Product with the PetStore API in it
+<br/>![](/images/33.png)
+<br/>![](/images/34.png)
+
+4. Let's create a subscription for this product
+<br/>![](/images/35.png)
+<br/>![](/images/36.png)
+
+5. Get the subscription key
+<br/>![](/images/37.png)
+<br/>![](/images/38.png)
+
+6. Open a browser and request the API from the previous lab:
+
+    ``` 
+    https://<<youruniqueapimname>>.azure-api.net/petstore/pet/1?subscription-key=<<yoursubscriptionkey>>
+    ```
+
+Replace ``<<yoursubscriptionkey>>`` with the subscription key you copied.
+
+
+You will now be able to see again a valid response and Azure API Management is able to identify you!
